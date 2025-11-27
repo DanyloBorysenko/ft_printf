@@ -7,7 +7,8 @@ char	*ft_itoa_unsd_int(unsigned int i);
 
 int	main(void)
 {
-	int expeacted = printf("%u\n", UINT_MAX);
-	int actual = ft_printf("%u\n", UINT_MAX);
+	char *ptr = "Hello";
+	int expeacted = printf("%p\n", ptr);
+	int actual = ft_printf("%p\n", ptr);
 	printf("expected : %d, actual : %d\n", expeacted, actual);
 }
