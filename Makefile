@@ -7,7 +7,9 @@ RM = rm -f
 LIBFT_DIR = libft
 LIBFT = $(LIBFT_DIR)/libft.a
 
-SRC = ft_printf.c
+SRC = ft_printf.c \
+	  ft_printf_utils.c
+
 OBJ = $(SRC:.c=.o)
 
 all: $(LIBFT) $(NAME)
@@ -20,7 +22,7 @@ $(NAME): $(OBJ)
 	$(AR) $(AR_FLAGS) $(NAME) $(OBJ)
 
 %.o: %.c
-	$(CC) $(CC_FLAGS) -I$(LIBFT_DIR) -c $< -o $@
+	$(CC) $(CC_FLAGS) -I . -I$(LIBFT_DIR) -c $< -o $@
 
 clean:
 	$(RM) $(OBJ)

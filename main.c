@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
-
-int	ft_printf(const char *, ...);
-char	*ft_itoa_unsd_int(unsigned int i);
+#include "ft_printf.h"
 
 int	main(void)
 {
 	char *ptr = "Hello";
-	int expeacted = printf("%p\n", ptr);
-	int actual = ft_printf("%p\n", ptr);
+	int expeacted = printf("%s, %p\n", ptr, ptr);
+	int actual = ft_printf("%s, %p\n", ptr, ptr);
 	printf("expected : %d, actual : %d\n", expeacted, actual);
+	char	*ft_itoa_p(void *p);
 }
