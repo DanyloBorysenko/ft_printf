@@ -6,11 +6,7 @@
 /*   By: danborys <borysenkodanyl@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 11:50:51 by danborys          #+#    #+#             */
-<<<<<<< Updated upstream
-/*   Updated: 2025/11/27 18:41:58 by danborys         ###   ########.fr       */
-=======
-/*   Updated: 2025/11/25 17:29:53 by danborys         ###   ########.fr       */
->>>>>>> Stashed changes
+/*   Updated: 2025/11/28 09:54:20 by danborys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +14,6 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-<<<<<<< Updated upstream
 char	*ft_itoa_unsd_int(unsigned int i)
 {
 	unsigned int	nb;
@@ -122,22 +117,6 @@ char	*ft_itoa_p(void *p)
 	}
 	return (ptr);
 }
-
-=======
-static void	put_uns_fd(unsigned int nb, int fd)
-{
-	unsigned long	mod;
-	char			c;
-
-	while (nb >= 10)
-		put_uns_fd(nb / 10, fd);
-	mod = nb % 10;
-	c = mod + '0';
-	write(fd, &c, 1);
-}
-
-int	
->>>>>>> Stashed changes
 
 int	ft_printf(const char *str, ...)
 {
