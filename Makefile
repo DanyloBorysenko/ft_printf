@@ -8,7 +8,8 @@ LIBFT_DIR = libft
 LIBFT = $(LIBFT_DIR)/libft.a
 
 SRC = ft_printf.c \
-	  ft_printf_utils.c
+	  ft_printf_utils_1.c \
+	  ft_printf_utils_2.c
 
 OBJ = $(SRC:.c=.o)
 
